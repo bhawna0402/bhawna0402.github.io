@@ -1,0 +1,626 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+margin:0;
+background:#081726;
+color:white;
+}
+
+
+/* NAVBAR */
+
+.navbar{
+display:flex;
+justify-content:space-between;
+padding:20px 80px;
+align-items:center;
+}
+
+.navbar a{
+margin-left:20px;
+text-decoration:none;
+color:white;
+font-weight:bold;
+}
+.navbar h2{
+color:white;
+}
+
+
+/* HERO SECTION */
+
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:80px;
+height:80vh;
+}
+
+.left {
+  max-width: 500px;
+}
+
+.left h1 {
+  font-size: 64px;
+  line-height: 1.2;
+}
+
+
+.left span{
+color:#ffd84d;
+}
+
+
+button{
+margin-top:20px;
+margin-bottom:15px;
+padding:12px 25px;
+background:#ffd84d;
+border:none;
+color:black;
+border-radius:6px;
+cursor:pointer;
+font-weight:bold;
+}
+
+
+.right img{
+width:380px;
+
+/* spacing from border */
+padding: 14px;
+
+/* transparent background */
+background:transparent;
+
+/* REAL sticker border following shape */
+filter:
+drop-shadow(0 0 0 white)
+drop-shadow(0 0 0 white)
+drop-shadow(0 0 0 white)
+drop-shadow(0 0 0 white)
+drop-shadow(0px 12px 25px rgba(0,0,0,0.35));
+
+/* move left */
+transform: translateX(-120px);
+}
+
+
+
+
+h1,h2,p{
+color:white;
+}
+
+.navbar h2,
+.navbar a{
+color:white;
+}
+.icons{
+margin-top:20px;
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+.icons a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.github img{
+filter:invert(1);
+}
+
+.icons a:hover{
+opacity:0.7;
+}
+.about-section{
+padding:100px 120px;
+}
+
+.about-title{
+text-align:center;
+font-size:48px;
+color:#ffd84d;
+margin-bottom:40px;
+position:relative;
+}
+
+.about-title::after{
+content:"";
+display:block;
+margin:10px auto 0;
+width:60px;
+height:3px;
+background:#ffd84d;
+border-radius:2px;
+}
+
+
+.about-container{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:80px;
+max-width:1200px;
+margin:0 auto;
+}
+
+
+
+
+.about-img img{
+width:360px;
+height:360px;
+object-fit:cover;
+border-radius:50%;
+display:block;
+opacity:1;
+background:none;
+box-shadow:0 20px 50px rgba(0,0,0,0.5);
+}
+
+
+
+.about-text h3{
+font-size:42px;
+margin-bottom:20px;
+}
+
+
+
+.about-text p{
+line-height:1.9;
+max-width:520px;
+font-size:20px;
+color:#e5e5e5;
+}
+
+
+.about{
+min-height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+padding:40px 0;
+}
+/* FIX ABOUT IMAGE */
+
+.about-img{
+flex:1;
+display:flex;
+justify-content:center;
+}
+
+.about-img img{
+  width: 360px;
+  height: 360px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+.projects h2{
+  text-align:center;
+  color:#ffd84d;
+  font-size:42px;
+  margin-bottom:60px;
+}
+
+.project-card h3{
+  color:white;
+  margin-bottom:15px;
+}
+
+.project-card p{
+  color:#cfd8e3;
+  line-height:1.6;
+}
+
+.project-card a{
+  display:inline-block;
+  margin-top:15px;
+  color:#ffd84d;
+  text-decoration:none;
+}
+.skills {
+  padding: 120px 10%;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 60px;
+  color: #facc15; /* yellow */
+  position: relative;
+}
+
+/* underline below Skills */
+.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #facc15;
+  margin: 12px auto 0;
+  border-radius: 2px;
+}
+
+
+.skills-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.skills-left {
+  flex: 1;
+}
+
+.skills-left h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.skills-left p {
+  color: #ccc;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill span {
+  font-weight: 600;
+}
+
+.bar {
+  width: 100%;
+  height: 8px;
+  background: #1f2a3a;
+  border-radius: 10px;
+  margin-top: 6px;
+  overflow: hidden;
+}
+
+.bar .progress {
+  height: 100%;
+  width: 0;                /* IMPORTANT */
+  background: #facc15;
+  border-radius: 10px;
+  transition: width 1.5s ease;
+}
+
+.skills-right {
+  border: none;
+}
+
+.bar {
+  background: #2a2a2a;
+}
+
+.skill {
+  position: relative;
+}
+
+.skill small {
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #facc15;
+  font-weight: 600;
+}
+/* ===== PROJECTS SECTION ===== */
+
+.projects {
+  padding: 80px 10%;
+  background: #081726;   /* SAME AS SKILLS */
+}
+
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+
+/* PROJECT CARD */
+.project-card {
+  background: #020b18;   /* swapped */
+  border-radius: 16px;
+  padding: 20px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  font-size: 18px;
+  color: #ffffff;
+  margin: 15px;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #cfd8dc;
+  margin: 0 15px 15px;
+  line-height: 1.6;
+}
+
+.project-card a {
+  display: inline-block;
+  margin: 0 15px 20px;
+  color: #ffd43b;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* HOVER EFFECT */
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* RESPONSIVE */
+@media (max-width: 1200px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.skills {
+  padding: 100px 10%;
+}
+
+
+.skills-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.skills-left {
+  flex: 1;
+}
+
+.skills-left h3 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.skills-left p {
+  color: #ccc;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill span {
+  font-weight: 600;
+}
+
+.bar {
+  width: 100%;
+  height: 8px;
+  background: #1f2a3a;
+  border-radius: 10px;
+  margin-top: 6px;
+}
+
+.bar div {
+  height: 100%;
+  background: #facc15; /* yellow */
+  border-radius: 10px;
+}
+.skills-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+/* ================= CLEAN FINAL IMAGE CONTROL ================= */
+
+/* ABOUT IMAGE — CIRCLE */
+.about-img {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.about-img img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+
+/* SKILLS IMAGE — RECTANGLE */
+.skills-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.skills-right img {
+  width: 420px;
+  height: auto;
+  border-radius: 18px;
+  object-fit: contain;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+}
+/* ===== SOCIAL ICONS – FINAL CORRECT FIX ===== */
+
+.icons {
+  margin-top: 30px;
+  display: flex;
+  gap: 18px;
+}
+
+.icons .icon {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+.icons .linkedin {
+  background: #0f0f0f; /* black outer box */
+}
+
+
+.icons .linkedin img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+/* GitHub: dark background + white logo */
+.icons .github {
+  background: #0f0f0f;
+}
+
+.icons .github img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* make GitHub visible */
+}
+
+/* Customer Segmentation animation */
+.animate-customer {
+  opacity: 0;
+  animation: customerFadeUp 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+@keyframes customerFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.45);
+}
+#customerLottie {
+  width: 100%;
+  height: 220px;          /* REQUIRED */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+}
+
+.project-card p {
+  display: none;
+}
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.fade-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+.lottie-box {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 15px;
+  background: rgba(255,255,255,0.03);
+  border-radius: 12px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.contact {
+  padding: 120px 10%;
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 420px;
+  margin: 40px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 14px;
+  border-radius: 8px;
+  border: 2px solid #1f2a3a;
+  font-size: 16px;
+  outline: none;
+}
+
+.contact-form button {
+  align-self: flex-end;
+  padding: 12px 30px;
+  background: #4f7cff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+/* === FORCE SKILL BAR WIDTH FIX (DO NOT REMOVE) === */
+.bar > div {
+  width: 0;                 /* override previous 100% */
+  background: #facc15;
+  height: 100%;
+  border-radius: 10px;
+  transition: width 1.2s ease-in-out;
+}
+
