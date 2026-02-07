@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bhawna | Data Analyst Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <h2>Portfolio</h2>
+  <div class="hamburger" id="hamburger">
+  <span></span>
+  <span></span>
+  <span></span>
+</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero fade-in" id="home">
+  <div class="left">
+    <h1>Hi,<br>I'm <span>Bhawna</span><br>Data Analyst</h1>
+
+    <a href="#contact">
+      <button>Contact</button>
+    </a>
+
+    <div class="icons">
+      <a href="https://www.linkedin.com/in/bhawna-suthar04/" target="_blank" class="icon linkedin">
+        <img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" alt="LinkedIn">
+      </a>
+
+      <a href="https://github.com/bhawna0402" target="_blank" class="icon github">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+      </a>
+    </div>
+  </div>
+
+  <div class="right">
+    <img src="images/profile.jpg" alt="Profile Image">
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="about-section fade-in" id="about">
+  <h2 class="about-title">About</h2>
+
+  <div class="about-container">
+    <div class="about-img">
+      <img src="images/about.jpeg" alt="About Image">
+    </div>
+
+    <div class="about-text">
+      <h3>I'm Bhawna</h3>
+      <p>
+        I am an aspiring Data Analyst skilled in SQL, Excel, Python, and Tableau.
+        I enjoy transforming raw data into meaningful insights and building dashboards
+        that support business decisions. Passionate about continuous learning and
+        problem-solving.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="skills fade-in" id="skills">
+  <h2 class="section-title">Skills</h2>
+
+  <div class="skills-container">
+
+    <div class="skills-left">
+      <h3>Professional Skills</h3>
+      <p>
+        Equipped with a strong analytical mindset and technical expertise, I leverage
+        data to drive meaningful insights and optimize decision-making.
+      </p>
+
+      <div class="skill">
+        <span>SQL</span>
+        <div class="bar"><div data-level="85%"></div></div>
+        <small>85%</small>
+      </div>
+
+      <div class="skill">
+        <span>Power BI</span>
+        <div class="bar"><div data-level="75%"></div></div>
+        <small>75%</small>
+      </div>
+
+      <div class="skill">
+        <span>Python</span>
+        <div class="bar"><div data-level="60%"></div></div>
+        <small>60%</small>
+      </div>
+
+      <div class="skill">
+        <span>Excel</span>
+        <div class="bar"><div data-level="70%"></div></div>
+        <small>70%</small>
+      </div>
+    </div>
+
+    <div class="skills-right">
+      <img src="images/skills.jpg" alt="Skills Image">
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="projects fade-in" id="projects">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="projects-grid">
+
+    <div class="project-card fade-in">
+      <div id="customerLottie" class="lottie-box"></div>
+      <h3>Customer Segmentation Analysis</h3>
+      <p>Segmented customers using clustering techniques to improve marketing strategy.</p>
+      <a href="https://github.com/bhawna0402/customer_segmentation_analysis" target="_blank">
+        View Project →
+      </a>
+    </div>
+
+    <div class="project-card fade-in">
+      <div id="project2Lottie" class="lottie-box"></div>
+      <h3>SQL Data Cleaning</h3>
+      <p>Cleaned and transformed raw datasets using advanced SQL queries.</p>
+      <a href="#">View Project →</a>
+    </div>
+
+    <div class="project-card fade-in">
+      <div id="project3Lottie" class="lottie-box"></div>
+      <h3>Excel Sales Dashboard</h3>
+      <p>Created dashboards using pivot tables and charts.</p>
+      <a href="#">View Project →</a>
+    </div>
+
+    <div class="project-card fade-in">
+      <div id="project4Lottie" class="lottie-box"></div>
+      <h3>Power BI Dashboard</h3>
+      <p>Built interactive Power BI dashboards to track KPIs.</p>
+      <a href="#">View Project →</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact fade-in" id="contact">
+  <h2 class="section-title">Contact</h2>
+
+  <form
+  class="contact-form"
+  action="https://formspree.io/f/xeelqrba"
+  method="POST"
+>
+  <input type="text" name="name" placeholder="Name" required>
+  <input type="email" name="email" placeholder="Email" required>
+  <textarea name="message" placeholder="Message" rows="6" required></textarea>
+
+  <!-- Optional: redirect back after submit -->
+<input type="hidden" name="_next" value="https://bhawna0402.github.io">
+
+  <button type="submit">Send</button>
+</form>
+
+
+</section>
+
+<!-- ================= SCRIPTS ================= -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
